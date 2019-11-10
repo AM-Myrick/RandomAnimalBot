@@ -12,12 +12,12 @@ import (
 
 func main() {
 	client := createTwitterClient()
-	requests.GetDogPic()
+	requests.FetchShibaPic()
 	listenForMentions(client)
 }
 
 func pickRandomAPI(tweet *twitter.Tweet, client *twitter.Client) {
-	requests.GetDogPic()
+	requests.FetchDogPic()
 }
 
 func createTwitterClient() *twitter.Client {
